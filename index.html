@@ -22,6 +22,13 @@
     </div>
   </nav>
   <article class="container mt-3">
+    <div class="row d-none d-sm-block">
+      <div class="col-12">
+        <div class="alert alert-warning">
+          <strong>Sale Now On!</strong> We've got a sale on. Get a 12-months subscription for price of 6! <a href="/">See here for details!</a>
+        </div>
+      </div>
+    </div>
     <!-- Callout -->
     <section class="callout">
       <div class="row jumbotron text-center">
@@ -47,16 +54,26 @@
           <h2 class="text-uppercase">Quotes:</h2>
         </div>
         <div class="col-12 col-md-6 my-5">
-          <blockquote calss="blockquote">
-            <p>I've been introduced to more than 10 great international whiskeys I never knew about.</p>
-            <footer>- Jane Doe on <cite title="Twitter">Twitter</cite></footer>
-          </blockquote>
+          <div class="media">
+            <div class="d-none d-sm-block">
+              <img src="images/girl-image.png" class="rounded-circle mr-3" height="100" alt="whiskey background">
+            </div>
+            <blockquote calss="blockquote">
+              <p>I've been introduced to more than 10 great international whiskeys I never knew about.</p>
+              <footer>- Jane Doe on <cite title="Twitter">Twitter</cite></footer>
+            </blockquote>
+          </div>
         </div>
         <div class="col-12 col-md-6 my-5">
-          <blockquote calss="blockquote">
-            <p>I haven't been sober for months!</p>
-            <p>- Jane Doe</p>
-          </blockquote>
+          <div class="media">
+            <div class="d-none d-sm-block">
+              <img src="images/guy-image.png" class="rounded-circle mr-3" height="100" alt="whiskey background">
+            </div>
+            <blockquote calss="blockquote">
+              <p>I haven't been sober for months!</p>
+              <p>- Jane Doe</p>
+            </blockquote>
+          </div>
         </div>
       </div>
     </section>
@@ -71,7 +88,7 @@
         </div>
         <div class="col-12 col-md-6 col-lg-4  my-5">
           <div class="feature">
-            <h3>Feature 1</h3>
+            <h3><i class="fa-solid fa-gift d-none d-sm-inline"></i> Feature <span class="badge badge-success">New!</span></h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
               et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
               aliquip ex ea commodo consequat.</p>
@@ -80,7 +97,7 @@
         </div>
         <div class="col-12 col-md-6 col-lg-4 my-5">
           <div class="feature">
-            <h3>Feature 2</h3>
+            <h3><i class="fa-solid fa-credit-card d-none d-sm-inline"></i> Feature 2</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
               et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
               aliquip ex ea commodo consequat.</p>
@@ -89,7 +106,7 @@
         </div>
         <div class="col-12 d-md-none d-lg-block col-lg-4  my-5">
           <div class="feature">
-            <h3>Feature 3</h3>
+            <h3><i class="fa-solid fa-circle-xmark d-none d-sm-inline"></i> Feature 3</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
               et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
               aliquip ex ea commodo consequat.</p>
@@ -132,6 +149,8 @@
     </section>
     <!-- /.Monthlyfavorites -->
   </article>
+  <script src="https://kit.fontawesome.com/c9e3fbf0ad.js" crossorigin="anonymous"></script>
 </body>
+
 
 </html>
