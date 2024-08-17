@@ -6,9 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Whiskey Drop | Taste a new whiskey every month</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+  <!-- Nav -->
   <nav class="navbar navbar-light bg-light navbar-expand-sm">
     <a href="/" class="navbar-brand">Whiskey Drop</a>
     <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -36,7 +41,10 @@
       <a class="nav-link" href="/login">Sighn In / Sign Up</a>
     </div>
   </nav>
-  <article class="container mt-3">
+  <!-- /.nav -->
+
+  <!-- Alert -->
+  <!-- <div class="container alert-container">
     <div class="row d-none d-sm-block">
       <div class="col-12">
         <div class="alert alert-warning">
@@ -45,25 +53,34 @@
         </div>
       </div>
     </div>
-    <!-- Callout -->
-    <section class="callout">
-      <div class="row jumbotron text-center">
-        <div class="col-12">
-          <h1>The finest whiskeys delivered to your doorstep.</h1>
+  </div> -->
+  <!-- /.alert -->
+
+  <!-- Callout -->
+  <div class="container-fruid callout-container">
+    <div class="opaque-overlay">&nbsp;</div>
+    <div class="row">
+      <div class="col-12">
+        <section class="callout jumbotron text-center">
+          <h1 class="jumbotron-header">The finest whiskeys delivered to your doorstep.</h1>
+          <hr class="block-devider block-devider--orange">
           <p class="lead">Sign up today to start receiving the world's best whiskeys every month.
             <s class="d-none d-sm-inline">€19.99</s>
             <span class="d-none d-sm-inline"><br></span>
             <strong><mark>First one is free!</mark></strong></p>
-          <p><button class="btn btn-lg btn-success" data-toggle="modal" data-target="#signUpModal">Sign Up!</button></p>
+          <p><button class="btn btn-lg btn--cta btn--red" data-toggle="modal" data-target="#signUpModal">Sign
+              Up!</button>
+          </p>
           <p class="text-muted"><small>You must be over 18 to sign up to our service. Please drink
               responsibly.</small></p>
-        </div>
+        </section>
       </div>
-    </section>
-    <!-- /.callout -->
-    <hr>
+    </div>
+  </div>
+  <!-- /.callout -->
 
-    <!-- Quotes -->
+  <!-- Quotes -->
+  <div class="container quotes-container">
     <section class="quotes">
       <div class="row">
         <div class="col-12 my-5">
@@ -93,10 +110,11 @@
         </div>
       </div>
     </section>
-    <!-- /.quotes -->
-    <hr>
+  </div>
+  <!-- /.quotes -->
 
-    <!-- Features -->
+  <!-- Features -->
+  <div class="container features-container">
     <section class="features">
       <div class="row">
         <div class="col-12 my-5">
@@ -132,46 +150,47 @@
         </div>
       </div>
     </section>
-    <!-- /.features -->
+  </div>
+  <!-- /.features -->
 
-    <!-- Monthlyfavorites -->
-    <section class="monthlyfavorites">
-      <h2 class="text-uppercase">Monthly favorites:</h2>
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Name</th>
-            <th scope="col">Origin</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Irish</td>
-            <td>Irish</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Scotch</td>
-            <td>Scotch</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Japanese</td>
-            <td>Japanese</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>American</td>
-            <td>American</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-    <!-- /.Monthlyfavorites -->
-  </article>
+  <!-- Monthlyfavorites -->
+  <section class="container monthlyfavorites">
+    <h2 class="text-uppercase">Monthly favorites:</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Origin</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Irish</td>
+          <td>Irish</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Scotch</td>
+          <td>Scotch</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Japanese</td>
+          <td>Japanese</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>American</td>
+          <td>American</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <!-- /.Monthlyfavorites -->
 
+  <!-- Modal and Form -->
   <div class="modal" tabindex="-1" id="signUpModal">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -202,6 +221,8 @@
       </div>
     </div>
   </div>
+  <!-- /.modal and form -->
+
   <script src="https://kit.fontawesome.com/c9e3fbf0ad.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
